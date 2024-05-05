@@ -5,8 +5,11 @@
     <string name="main_fragment_label">App Coroutine and Flow Usecases</string>
     <string name="coroutine_usecases_fragment_label">Coroutine Usecases</string>
     <string name="sequential_network_request_callback_fragment_label">Callback Usecase</string>
+    <string name="sequential_network_request_rxjava_fragment_label">RxJava Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="load_features">Load Features</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

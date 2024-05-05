@@ -51,6 +51,11 @@ dependencies {
 
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    implementation(libs.adapter.rxjava2)
+
+    implementation(libs.rxandroid)
+    implementation(libs.rxjava)
+    implementation(libs.rxkotlin)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

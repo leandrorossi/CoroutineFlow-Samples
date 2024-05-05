@@ -30,6 +30,10 @@ class CoroutineUsecasesFragment : Fragment() {
             findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_SequentialNetworkRequestCallbackFragment)
         }
 
+        binding.tvSequentialRxjava.setOnClickListener {
+            findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_SequentialNetworkRequestRxJavaFragment)
+        }
+
     }
 
     override fun onDestroyView() {
