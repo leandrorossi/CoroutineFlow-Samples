@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CoroutineFlow-Course</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="main_fragment_label">App Coroutine and Flow Usecases</string>
+    <string name="coroutine_usecases_fragment_label">Coroutine Usecases</string>
+
+    <string name="coroutine_usecase">Coroutine usecases</string>
+
+</resources>

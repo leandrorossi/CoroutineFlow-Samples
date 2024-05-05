@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.coroutineflow_course.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_MainFragment_to_CoroutineUsecasesFragment"
+            app:destination="@id/CoroutineUsecasesFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/silde_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CoroutineUsecasesFragment"
+        android:name="com.example.coroutineflow_course.CoroutineUsecasesFragment"
+        android:label="@string/coroutine_usecases_fragment_label"
+        tools:layout="@layout/fragment_coroutine_usecases" >
+
+    </fragment>
+
+</navigation>
