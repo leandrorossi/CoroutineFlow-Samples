@@ -25,7 +25,7 @@
         android:id="@+id/CoroutineUsecasesFragment"
         android:name="com.example.coroutineflow_course.CoroutineUsecasesFragment"
         android:label="@string/coroutine_usecases_fragment_label"
-        tools:layout="@layout/fragment_coroutine_usecases" >
+        tools:layout="@layout/fragment_coroutine_usecases">
 
         <action
             android:id="@+id/action_CoroutineUsecasesFragment_to_SequentialNetworkRequestCallbackFragment"
@@ -38,6 +38,14 @@
         <action
             android:id="@+id/action_CoroutineUsecasesFragment_to_SequentialNetworkRequestRxJavaFragment"
             app:destination="@id/SequentialNetworkRequestRxJavaFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_SequentialNetworkRequestCoroutineFragment"
+            app:destination="@id/SequentialNetworkRequestCoroutineFragment"
             app:enterAnim="@anim/slide_in"
             app:exitAnim="@android:anim/fade_out"
             app:popEnterAnim="@android:anim/fade_in"
@@ -58,6 +66,14 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase1.rxjava.SequentialNetworkRequestsRxJavaFragment"
         android:label="@string/sequential_network_request_rxjava_fragment_label"
         tools:layout="@layout/fragment_sequential_network_requests_rx_java">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SequentialNetworkRequestCoroutineFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase1.coroutine.SequentialNetworkRequestsCoroutineFragment"
+        android:label="@string/sequential_network_request_coroutine_fragment_label"
+        tools:layout="@layout/fragment_sequential_network_requests_coroutine">
 
     </fragment>
 

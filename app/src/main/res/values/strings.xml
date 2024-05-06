@@ -6,6 +6,7 @@
     <string name="coroutine_usecases_fragment_label">Coroutine Usecases</string>
     <string name="sequential_network_request_callback_fragment_label">Callback Usecase</string>
     <string name="sequential_network_request_rxjava_fragment_label">RxJava Usecase</string>
+    <string name="sequential_network_request_coroutine_fragment_label">Coroutine Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="load_features">Load Features</string>
