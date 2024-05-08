@@ -36,7 +36,7 @@ class SequentialNetworkRequestsCoroutineFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnSequentialNetworkRequestCoroutine.setOnClickListener {
-            viewModel.performToSequentialNetworkRequest()
+            viewModel.performSequentialNetworkRequest()
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

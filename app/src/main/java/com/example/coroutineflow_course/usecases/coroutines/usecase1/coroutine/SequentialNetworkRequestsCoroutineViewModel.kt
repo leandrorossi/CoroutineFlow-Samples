@@ -14,7 +14,7 @@ class SequentialNetworkRequestsCoroutineViewModel(
     private var _uiState = MutableStateFlow(UiState())
     val uiState: StateFlow<UiState> get() = _uiState
 
-    fun performToSequentialNetworkRequest() {
+    fun performSequentialNetworkRequest() {
         _uiState.value = UiState.Loading
 
         viewModelScope.launch {

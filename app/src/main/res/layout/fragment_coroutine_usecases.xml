@@ -10,8 +10,8 @@
         android:id="@+id/tv_sequential_callback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="16dp"
         android:text="Sequential Network Request with Callbacks" />
 
     <com.google.android.material.divider.MaterialDivider
@@ -22,8 +22,8 @@
         android:id="@+id/tv_sequential_rxjava"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="16dp"
         android:text="Sequential Network Request with RxJava" />
 
     <com.google.android.material.divider.MaterialDivider
@@ -34,9 +34,33 @@
         android:id="@+id/tv_sequential_coroutine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="16dp"
         android:text="Sequential Network Request with Coroutine" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_concurrent_coroutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="16dp"
+        android:text="Concurrent and Sequential Network Request" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_concurrent_variable_amount_coroutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="16dp"
+        android:text="Concurrent and Sequential with Variable Amount of Network Request" />
 
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"

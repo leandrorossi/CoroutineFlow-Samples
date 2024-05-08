@@ -35,7 +35,7 @@ class SequentialNetworkRequestsRxJavaFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnSequentialNetworkRequestRxjava.setOnClickListener {
-            viewModel.performToSequentialNetworkRequest()
+            viewModel.performSequentialNetworkRequest()
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

@@ -4,12 +4,15 @@
     <!-- Strings used for fragments for navigation -->
     <string name="main_fragment_label">App Coroutine and Flow Usecases</string>
     <string name="coroutine_usecases_fragment_label">Coroutine Usecases</string>
-    <string name="sequential_network_request_callback_fragment_label">Callback Usecase</string>
-    <string name="sequential_network_request_rxjava_fragment_label">RxJava Usecase</string>
-    <string name="sequential_network_request_coroutine_fragment_label">Coroutine Usecase</string>
+    <string name="sequential_network_request_callback_fragment_label">Sequential Callback Usecase</string>
+    <string name="sequential_network_request_rxjava_fragment_label">Sequential RxJava Usecase</string>
+    <string name="sequential_network_request_coroutine_fragment_label">Sequential Coroutine Usecase</string>
+    <string name="concurrent_network_request_fragment_label">Concurrent Coroutine Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="load_features">Load Features</string>
+    <string name="load_features_sequentially">Load Features Sequentially</string>
+    <string name="load_features_concurrently">Load Features Concurrently</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

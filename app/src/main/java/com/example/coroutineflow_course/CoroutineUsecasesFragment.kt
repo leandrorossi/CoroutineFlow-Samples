@@ -38,6 +38,14 @@ class CoroutineUsecasesFragment : Fragment() {
             findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_SequentialNetworkRequestCoroutineFragment)
         }
 
+        binding.tvConcurrentCoroutine.setOnClickListener {
+            findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_ConcurrentNetworkRequestFragment)
+        }
+
+        binding.tvConcurrentVariableAmountCoroutine.setOnClickListener {
+            findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_ConcurrentVariableAmountOfNetworkRequestFragment)
+        }
+
     }
 
     override fun onDestroyView() {

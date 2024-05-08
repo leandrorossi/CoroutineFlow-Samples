@@ -18,7 +18,7 @@ class SequentialNetworkRequestsRxJavaViewModel(
 
     private val disposables = CompositeDisposable()
 
-    fun performToSequentialNetworkRequest() {
+    fun performSequentialNetworkRequest() {
         _uiState.value = UiState.Loading
 
         mockApi.getRecentAndroidVersions()

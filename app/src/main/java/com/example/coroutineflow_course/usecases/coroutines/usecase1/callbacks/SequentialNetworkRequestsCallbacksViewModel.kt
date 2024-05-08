@@ -19,7 +19,7 @@ class SequentialNetworkRequestsCallbacksViewModel(
     private var getAndroidVersionCall: Call<List<AndroidVersion>>? = null
     private var getAndroidFeaturesCall: Call<VersionFeatures>? = null
 
-    fun performToSequentialNetworkRequest() {
+    fun performSequentialNetworkRequest() {
         _uiState.value = UiState.Loading
 
         getAndroidVersionCall = mockApi.getRecentAndroidVersions()

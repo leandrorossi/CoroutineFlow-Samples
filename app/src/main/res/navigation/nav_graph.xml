@@ -51,6 +51,22 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_ConcurrentNetworkRequestFragment"
+            app:destination="@id/ConcurrentNetworkRequestFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_ConcurrentVariableAmountOfNetworkRequestFragment"
+            app:destination="@id/ConcurrentVariableAmountOfNetworkRequestFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
     </fragment>
 
     <fragment
@@ -74,6 +90,22 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase1.coroutine.SequentialNetworkRequestsCoroutineFragment"
         android:label="@string/sequential_network_request_coroutine_fragment_label"
         tools:layout="@layout/fragment_sequential_network_requests_coroutine">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ConcurrentNetworkRequestFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase2.ConcurrentNetworkRequestsFragment"
+        android:label="@string/concurrent_network_request_fragment_label"
+        tools:layout="@layout/fragment_concurrent_network_requests">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ConcurrentVariableAmountOfNetworkRequestFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase3.VariableAmountOfNetworkRequestsFragment"
+        android:label="@string/concurrent_network_request_fragment_label"
+        tools:layout="@layout/fragment_variable_amount_of_network_requests">
 
     </fragment>
 

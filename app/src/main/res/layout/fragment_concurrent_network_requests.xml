@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".usecases.coroutines.usecase2.ConcurrentNetworkRequestsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_concurrent_network_request_sequentially"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/load_features_sequentially"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_concurrent_network_request_concurrently"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/load_features_concurrently"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/btn_concurrent_network_request_sequentially" />
+
+        <ProgressBar
+            android:id="@+id/pb_concurrent_network_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_concurrent_network_request_concurrently" />
+
+        <TextView
+            android:id="@+id/tv_concurrent_network_request_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/pb_concurrent_network_request" />
+
+        <TextView
+            android:id="@+id/tv_concurrent_network_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_concurrent_network_request_time" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

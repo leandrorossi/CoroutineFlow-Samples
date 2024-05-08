@@ -38,7 +38,7 @@ class SequentialNetworkRequestsCallbacksFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnSequentialNetworkRequestCallback.setOnClickListener {
-            viewModel.performToSequentialNetworkRequest()
+            viewModel.performSequentialNetworkRequest()
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
