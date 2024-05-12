@@ -11,12 +11,16 @@
     <string name="network_request_timeout_fragment_label">Timeout Coroutine Usecase</string>
     <string name="network_request_retry_fragment_label">Retry Coroutine Usecase</string>
     <string name="network_request_timeout_and_retry_fragment_label">Timeout and Retry Coroutine Usecase</string>
+    <string name="room_and_coroutine_fragment_label">Room and Coroutine Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="load_features">Load Features</string>
     <string name="load_android_versions">Load Android Versions</string>
     <string name="load_features_sequentially">Load Features Sequentially</string>
     <string name="load_features_concurrently">Load Features Concurrently</string>
+    <string name="clear_database">Clear Database</string>
+    <string name="loading_data_from_database">Loading data from database</string>
+    <string name="loading_data_from_network">Loading data from network</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

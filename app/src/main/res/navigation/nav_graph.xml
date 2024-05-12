@@ -91,6 +91,14 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_RoomAndCoroutineFragment"
+            app:destination="@id/RoomAndCoroutineFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
     </fragment>
 
     <fragment
@@ -154,6 +162,14 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase6.NetworkRequestsWithTimeoutAndRetryFragment"
         android:label="@string/network_request_timeout_and_retry_fragment_label"
         tools:layout="@layout/fragment_network_requests_with_timeout_and_retry">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RoomAndCoroutineFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase7.RoomAndCoroutinesFragment"
+        android:label="@string/room_and_coroutine_fragment_label"
+        tools:layout="@layout/fragment_room_and_coroutines">
 
     </fragment>
 

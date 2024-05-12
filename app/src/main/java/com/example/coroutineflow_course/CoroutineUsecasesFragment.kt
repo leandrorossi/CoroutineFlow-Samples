@@ -58,6 +58,10 @@ class CoroutineUsecasesFragment : Fragment() {
             findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_NetworkRequestWithTimeoutAndRetryFragment)
         }
 
+        binding.tvRoomAndCoroutines.setOnClickListener {
+            findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_RoomAndCoroutineFragment)
+        }
+
     }
 
     override fun onDestroyView() {
