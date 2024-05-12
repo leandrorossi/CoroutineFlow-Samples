@@ -67,6 +67,30 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_NetworkRequestWithTimeoutFragment"
+            app:destination="@id/NetworkRequestWithTimeoutFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_NetworkRequestWithRetryFragment"
+            app:destination="@id/NetworkRequestWithRetryFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_NetworkRequestWithTimeoutAndRetryFragment"
+            app:destination="@id/NetworkRequestWithTimeoutAndRetryFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
     </fragment>
 
     <fragment
@@ -106,6 +130,30 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase3.VariableAmountOfNetworkRequestsFragment"
         android:label="@string/concurrent_network_request_fragment_label"
         tools:layout="@layout/fragment_variable_amount_of_network_requests">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/NetworkRequestWithTimeoutFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase4.NetworkRequestsWithTimeoutFragment"
+        android:label="@string/network_request_timeout_fragment_label"
+        tools:layout="@layout/fragment_network_requests_with_timeout">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/NetworkRequestWithRetryFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase5.NetworkRequestsWithRetryFragment"
+        android:label="@string/network_request_retry_fragment_label"
+        tools:layout="@layout/fragment_network_requests_with_retry">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/NetworkRequestWithTimeoutAndRetryFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase6.NetworkRequestsWithTimeoutAndRetryFragment"
+        android:label="@string/network_request_timeout_and_retry_fragment_label"
+        tools:layout="@layout/fragment_network_requests_with_timeout_and_retry">
 
     </fragment>
 

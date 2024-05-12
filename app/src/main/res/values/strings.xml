@@ -8,9 +8,13 @@
     <string name="sequential_network_request_rxjava_fragment_label">Sequential RxJava Usecase</string>
     <string name="sequential_network_request_coroutine_fragment_label">Sequential Coroutine Usecase</string>
     <string name="concurrent_network_request_fragment_label">Concurrent Coroutine Usecase</string>
+    <string name="network_request_timeout_fragment_label">Timeout Coroutine Usecase</string>
+    <string name="network_request_retry_fragment_label">Retry Coroutine Usecase</string>
+    <string name="network_request_timeout_and_retry_fragment_label">Timeout and Retry Coroutine Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="load_features">Load Features</string>
+    <string name="load_android_versions">Load Android Versions</string>
     <string name="load_features_sequentially">Load Features Sequentially</string>
     <string name="load_features_concurrently">Load Features Concurrently</string>
     <!-- TODO: Remove or change this placeholder text -->
