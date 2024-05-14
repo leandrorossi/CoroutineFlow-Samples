@@ -12,6 +12,8 @@
     <string name="network_request_retry_fragment_label">Retry Coroutine Usecase</string>
     <string name="network_request_timeout_and_retry_fragment_label">Timeout and Retry Coroutine Usecase</string>
     <string name="room_and_coroutine_fragment_label">Room and Coroutine Usecase</string>
+    <string name="dispatcher_and_context_coroutine_fragment_label">Dispatcher and Context Usecase</string>
+    <string name="calculation_in_several_coroutine_fragment_label">Calculation Several Coroutines Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="load_features">Load Features</string>
@@ -21,6 +23,11 @@
     <string name="clear_database">Clear Database</string>
     <string name="loading_data_from_database">Loading data from database</string>
     <string name="loading_data_from_network">Loading data from network</string>
+    <string name="calculate">Calculate</string>
+    <string name="factorial_of">Factorial of</string>
+    <string name="number_of_coroutines">Number of coroutines</string>
+    <string name="duration_calculation">Calculation took %d ms</string>
+    <string name="duration_string_conversion">Converting BigInteger to String took %d ms</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

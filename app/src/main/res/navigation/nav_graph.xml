@@ -99,6 +99,22 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_DispatcherAndContextCoroutineFragment"
+            app:destination="@id/DispatcherAndContextCoroutineFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_CalculationInSeveralCoroutineFragment"
+            app:destination="@id/CalculationInSeveralCoroutineFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
     </fragment>
 
     <fragment
@@ -170,6 +186,22 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase7.RoomAndCoroutinesFragment"
         android:label="@string/room_and_coroutine_fragment_label"
         tools:layout="@layout/fragment_room_and_coroutines">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/DispatcherAndContextCoroutineFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase8.DispatcherAndContextCoroutineFragment"
+        android:label="@string/dispatcher_and_context_coroutine_fragment_label"
+        tools:layout="@layout/fragment_dispatcher_and_context_coroutine">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CalculationInSeveralCoroutineFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase9.CalculationInSeveralCoroutinesFragment"
+        android:label="@string/calculation_in_several_coroutine_fragment_label"
+        tools:layout="@layout/fragment_calculation_in_several_coroutines">
 
     </fragment>
 

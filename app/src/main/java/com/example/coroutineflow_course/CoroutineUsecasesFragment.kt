@@ -62,6 +62,14 @@ class CoroutineUsecasesFragment : Fragment() {
             findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_RoomAndCoroutineFragment)
         }
 
+        binding.tvDispatcherAndContextCoroutines.setOnClickListener {
+            findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_DispatcherAndContextCoroutineFragment)
+        }
+
+        binding.tvCalculationInSeveralCoroutines.setOnClickListener {
+            findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_CalculationInSeveralCoroutineFragment)
+        }
+
     }
 
     override fun onDestroyView() {
