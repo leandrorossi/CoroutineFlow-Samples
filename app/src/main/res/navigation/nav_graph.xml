@@ -123,6 +123,13 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_CooperativeCancellationFragment"
+            app:destination="@id/CooperativeCancellationFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
 
     </fragment>
 
@@ -219,6 +226,14 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase10.ContinueCoroutineWhenUserLeavesScreenFragment"
         android:label="@string/continue_coroutine_when_user_leaves_screen_fragment_label"
         tools:layout="@layout/fragment_continue_coroutine_when_user_leaves_screen">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CooperativeCancellationFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase11.CooperativeCancellationFragment"
+        android:label="@string/cooperative_cancellation_fragment_label"
+        tools:layout="@layout/fragment_cooperative_cancellation">
 
     </fragment>
 

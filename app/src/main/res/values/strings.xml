@@ -15,6 +15,7 @@
     <string name="dispatcher_and_context_coroutine_fragment_label">Dispatcher and Context Usecase</string>
     <string name="calculation_in_several_coroutine_fragment_label">Calculation Several Coroutines Usecase</string>
     <string name="continue_coroutine_when_user_leaves_screen_fragment_label">Continue Coroutine Usecase</string>
+    <string name="cooperative_cancellation_fragment_label">Cooperative Cancellation Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="load_features">Load Features</string>
@@ -25,6 +26,7 @@
     <string name="loading_data_from_database">Loading data from database</string>
     <string name="loading_data_from_network">Loading data from network</string>
     <string name="calculate">Calculate</string>
+    <string name="cancel">Cancel</string>
     <string name="factorial_of">Factorial of</string>
     <string name="number_of_coroutines">Number of coroutines</string>
     <string name="duration_calculation">Calculation took %d ms</string>

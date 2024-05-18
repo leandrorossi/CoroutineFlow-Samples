@@ -74,6 +74,10 @@ class CoroutineUsecasesFragment : Fragment() {
             findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_ContinueCoroutineWhenUserLeavesScreenFragment)
         }
 
+        binding.tvCooperativeCancellation.setOnClickListener {
+            findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_CooperativeCancellationFragment)
+        }
+
     }
 
     override fun onDestroyView() {
