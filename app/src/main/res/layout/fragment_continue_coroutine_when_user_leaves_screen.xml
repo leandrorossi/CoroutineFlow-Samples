@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".usecases.coroutines.usecase10.ContinueCoroutineWhenUserLeavesScreenFragment">
+
+    <Button
+        android:id="@+id/btn_continue_coroutine_load_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/load_android_versions"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_continue_coroutine_clear_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/clear_database"
+        app:layout_constraintTop_toBottomOf="@id/btn_continue_coroutine_load_data" />
+
+    <ImageView
+        android:id="@+id/img_continue_coroutine_from_database"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/pb_continue_coroutine_from_database"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_continue_coroutine_clear_database" />
+
+    <ProgressBar
+        android:id="@+id/pb_continue_coroutine_from_database"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_continue_coroutine_from_database"
+        app:layout_constraintStart_toEndOf="@+id/img_continue_coroutine_from_database"
+        app:layout_constraintTop_toBottomOf="@id/btn_continue_coroutine_clear_database" />
+
+    <TextView
+        android:id="@+id/tv_continue_coroutine_from_database"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/loading_data_from_database"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_continue_coroutine_from_database"
+        app:layout_constraintTop_toBottomOf="@id/btn_continue_coroutine_clear_database" />
+
+    <ImageView
+        android:id="@+id/img_continue_coroutine_from_network"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/pb_continue_coroutine_from_network"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_continue_coroutine_from_database" />
+
+    <ProgressBar
+        android:id="@+id/pb_continue_coroutine_from_network"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_continue_coroutine_from_network"
+        app:layout_constraintStart_toEndOf="@+id/img_continue_coroutine_from_network"
+        app:layout_constraintTop_toBottomOf="@id/tv_continue_coroutine_from_database" />
+
+    <TextView
+        android:id="@+id/tv_continue_coroutine_from_network"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/loading_data_from_network"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_continue_coroutine_from_network"
+        app:layout_constraintTop_toBottomOf="@id/tv_continue_coroutine_from_database" />
+
+    <TextView
+        android:id="@+id/tv_continue_coroutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_continue_coroutine_from_network" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

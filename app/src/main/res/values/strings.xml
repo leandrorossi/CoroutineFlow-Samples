@@ -14,6 +14,7 @@
     <string name="room_and_coroutine_fragment_label">Room and Coroutine Usecase</string>
     <string name="dispatcher_and_context_coroutine_fragment_label">Dispatcher and Context Usecase</string>
     <string name="calculation_in_several_coroutine_fragment_label">Calculation Several Coroutines Usecase</string>
+    <string name="continue_coroutine_when_user_leaves_screen_fragment_label">Continue Coroutine Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="load_features">Load Features</string>

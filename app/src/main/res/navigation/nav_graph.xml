@@ -115,6 +115,15 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_ContinueCoroutineWhenUserLeavesScreenFragment"
+            app:destination="@id/ContinueCoroutineWhenUserLeavesScreenFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+
     </fragment>
 
     <fragment
@@ -202,6 +211,14 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase9.CalculationInSeveralCoroutinesFragment"
         android:label="@string/calculation_in_several_coroutine_fragment_label"
         tools:layout="@layout/fragment_calculation_in_several_coroutines">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ContinueCoroutineWhenUserLeavesScreenFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase10.ContinueCoroutineWhenUserLeavesScreenFragment"
+        android:label="@string/continue_coroutine_when_user_leaves_screen_fragment_label"
+        tools:layout="@layout/fragment_continue_coroutine_when_user_leaves_screen">
 
     </fragment>
 

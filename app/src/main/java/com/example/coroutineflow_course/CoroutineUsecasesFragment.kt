@@ -70,6 +70,10 @@ class CoroutineUsecasesFragment : Fragment() {
             findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_CalculationInSeveralCoroutineFragment)
         }
 
+        binding.tvContinueCoroutineWhenUserLeavesScreen.setOnClickListener {
+            findNavController().navigate(R.id.action_CoroutineUsecasesFragment_to_ContinueCoroutineWhenUserLeavesScreenFragment)
+        }
+
     }
 
     override fun onDestroyView() {
