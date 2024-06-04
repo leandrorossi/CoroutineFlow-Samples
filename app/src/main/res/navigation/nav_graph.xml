@@ -131,6 +131,14 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_CoroutineUsecasesFragment_to_CoroutineExceptionHandlingFragment"
+            app:destination="@id/CoroutineExceptionHandlingFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
     </fragment>
 
     <fragment
@@ -234,6 +242,14 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase11.CooperativeCancellationFragment"
         android:label="@string/cooperative_cancellation_fragment_label"
         tools:layout="@layout/fragment_cooperative_cancellation">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CoroutineExceptionHandlingFragment"
+        android:name="com.example.coroutineflow_course.usecases.coroutines.usecase12.CoroutineExceptionHandlingFragment"
+        android:label="@string/coroutine_exception_handling_fragment_label"
+        tools:layout="@layout/fragment_coroutine_exception_handling">
 
     </fragment>
 

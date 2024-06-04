@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".usecases.coroutines.usecase12.CoroutineExceptionHandlingFragment">
+
+    <Button
+        android:id="@+id/btn_coroutine_exception_handling_with_try_catch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/try_catch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_coroutine_exception_handling_with_exception_handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/exception_handler"
+        app:layout_constraintTop_toBottomOf="@+id/btn_coroutine_exception_handling_with_try_catch" />
+
+    <Button
+        android:id="@+id/btn_coroutine_exception_handling_result_even_with_fail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/show_result_even_if_child_coroutine_fails"
+        app:layout_constraintTop_toBottomOf="@+id/btn_coroutine_exception_handling_with_exception_handler" />
+
+    <ProgressBar
+        android:id="@+id/pb_coroutine_exception_handling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_coroutine_exception_handling_result_even_with_fail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pb_coroutine_exception_handling">
+
+        <TextView
+            android:id="@+id/tv_coroutine_exception_handling_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
