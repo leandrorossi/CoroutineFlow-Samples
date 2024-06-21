@@ -24,7 +24,7 @@ class FactorialCalculator(
         }
     }
 
-    private fun calculateFactorialOfSubRange(subRange: SubRange): BigInteger {
+    fun calculateFactorialOfSubRange(subRange: SubRange): BigInteger {
         var factorial = BigInteger.ONE
         for (i in subRange.start..subRange.end) {
             factorial = factorial.multiply(BigInteger.valueOf(i.toLong()))
@@ -32,7 +32,7 @@ class FactorialCalculator(
         return factorial
     }
 
-    private fun createSubRangeList(factorialOf: Int, numberOfSubRanges: Int): List<SubRange> {
+    fun createSubRangeList(factorialOf: Int, numberOfSubRanges: Int): List<SubRange> {
         val quotient = factorialOf.div(numberOfSubRanges)
         val rangeList = mutableListOf<SubRange>()
 

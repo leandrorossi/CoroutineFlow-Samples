@@ -3,6 +3,7 @@ package com.example.coroutineflow_course.usecases.coroutines.usecase3
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.coroutineflow_course.mock.MockApi
+import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -15,6 +16,10 @@ class VariableAmountOfNetworkRequestsViewModel(
 
     private var _uiState = MutableStateFlow(UiState())
     val uiState: StateFlow<UiState> get() = _uiState
+
+    private val exceptionHandler = CoroutineExceptionHandler { _, _ ->
+        _uiState.value = UiState.Error("Network request failed")
+    }
 
     fun performNetworkRequestsSequentially() {
         _uiState.value = UiState.Loading
@@ -35,7 +40,7 @@ class VariableAmountOfNetworkRequestsViewModel(
     fun performNetworkRequestsConcurrently() {
         _uiState.value = UiState.Loading
 
-        viewModelScope.launch {
+        viewModelScope.launch(exceptionHandler) {
             try {
                 val recentVersions = mockApi.getRecentAndroidVersions()
                 val versionFeatures = recentVersions.map {

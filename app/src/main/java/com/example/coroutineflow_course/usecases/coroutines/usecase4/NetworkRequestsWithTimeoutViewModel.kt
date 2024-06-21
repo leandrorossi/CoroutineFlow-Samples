@@ -50,7 +50,7 @@ class NetworkRequestsWithTimeoutViewModel(
                 if (recentAndroidVersions != null) {
                     _uiState.value = UiState.Success(recentAndroidVersions)
                 } else {
-                    _uiState.value = UiState.Error("Network Request timed out!")
+                    _uiState.value = UiState.Error("Network request timed out")
                 }
             } catch (timeout: TimeoutCancellationException) {
                 _uiState.value = UiState.Error("Network request timed out")
