@@ -17,8 +17,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tv_coroutine_usecase" />
+
+    <TextView
+        android:id="@+id/tv_flow_usecase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="20dp"
+        android:text="@string/flow_usecase"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/divider_main" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_flow_usecase" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

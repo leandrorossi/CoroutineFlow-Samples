@@ -17,8 +17,12 @@
     <string name="continue_coroutine_when_user_leaves_screen_fragment_label">Continue Coroutine Usecase</string>
     <string name="cooperative_cancellation_fragment_label">Cooperative Cancellation Usecase</string>
     <string name="coroutine_exception_handling_fragment_label">Exception Handling Usecase</string>
+    <string name="flow_livedata_usecase_fragment_label">Flow LiveData Usecase</string>
+    <string name="flow_shared_flow_usecase_fragment_label">Flow SharedFlow Usecase</string>
+    <string name="flow_state_flow_usecase_fragment_label">Flow StateFlow Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
+    <string name="flow_usecase">Flow usecases</string>
     <string name="load_features">Load Features</string>
     <string name="load_android_versions">Load Android Versions</string>
     <string name="load_features_sequentially">Load Features Sequentially</string>

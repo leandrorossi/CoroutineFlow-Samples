@@ -30,6 +30,10 @@ class MainFragment : Fragment() {
             findNavController().navigate(R.id.action_MainFragment_to_CoroutineUsecasesFragment)
         }
 
+        binding.tvFlowUsecase.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_FlowUsecasesFragment)
+        }
+
     }
 
     override fun onDestroyView() {

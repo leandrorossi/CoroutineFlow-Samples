@@ -19,6 +19,14 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_MainFragment_to_FlowUsecasesFragment"
+            app:destination="@id/FlowUsecasesFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
     </fragment>
 
     <fragment
@@ -250,6 +258,60 @@
         android:name="com.example.coroutineflow_course.usecases.coroutines.usecase12.CoroutineExceptionHandlingFragment"
         android:label="@string/coroutine_exception_handling_fragment_label"
         tools:layout="@layout/fragment_coroutine_exception_handling">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FlowUsecasesFragment"
+        android:name="com.example.coroutineflow_course.FlowUsecasesFragment"
+        android:label="@string/flow_usecase"
+        tools:layout="@layout/fragment_flow_usecases">
+
+        <action
+            android:id="@+id/action_FlowUsecasesFragment_to_FlowAsLivedataUsecaseFragment"
+            app:destination="@id/FlowAsLivedataUsecaseFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+        <action
+            android:id="@+id/action_FlowUsecasesFragment_to_FlowAsSharedFlowUsecaseFragment"
+            app:destination="@id/FlowAsSharedFlowUsecaseFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+        <action
+            android:id="@+id/action_FlowUsecasesFragment_to_FlowAsStateFlowUsecaseFragment"
+            app:destination="@id/FlowAsStateFlowUsecaseFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FlowAsLivedataUsecaseFragment"
+        android:name="com.example.coroutineflow_course.usecases.flows.usecase1.FlowAsLivedataUsecaseFragment"
+        android:label="@string/flow_livedata_usecase_fragment_label"
+        tools:layout="@layout/fragment_flow_as_livedata_usecase">
+    </fragment>
+
+    <fragment
+        android:id="@+id/FlowAsSharedFlowUsecaseFragment"
+        android:name="com.example.coroutineflow_course.usecases.flows.usecase2.FlowAsSharedFlowUsecaseFragment"
+        android:label="@string/flow_shared_flow_usecase_fragment_label"
+        tools:layout="@layout/fragment_flow_as_shared_flow_usecase">
+    </fragment>
+
+    <fragment
+        android:id="@+id/FlowAsStateFlowUsecaseFragment"
+        android:name="com.example.coroutineflow_course.usecases.flows.usecase3.FlowAsStateFlowUsecaseFragment"
+        android:label="@string/flow_state_flow_usecase_fragment_label"
+        tools:layout="@layout/fragment_flow_as_state_flow_usecase">
 
     </fragment>
 
