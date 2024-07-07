@@ -291,27 +291,59 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@anim/slide_out" />
 
+        <action
+            android:id="@+id/action_FlowUsecasesFragment_to_FlowOperatorsUsecaseFragment"
+            app:destination="@id/FlowOperatorsUsecaseFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+        <action
+            android:id="@+id/action_FlowUsecasesFragment_to_FlowExceptionHandlingUsecaseFragment"
+            app:destination="@id/FlowExceptionHandlingUsecaseFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
     </fragment>
 
     <fragment
         android:id="@+id/FlowAsLivedataUsecaseFragment"
         android:name="com.example.coroutineflow_course.usecases.flows.usecase1.FlowAsLivedataUsecaseFragment"
         android:label="@string/flow_livedata_usecase_fragment_label"
-        tools:layout="@layout/fragment_flow_as_livedata_usecase">
+        tools:layout="@layout/fragment_flow_stock">
     </fragment>
 
     <fragment
         android:id="@+id/FlowAsSharedFlowUsecaseFragment"
         android:name="com.example.coroutineflow_course.usecases.flows.usecase2.FlowAsSharedFlowUsecaseFragment"
         android:label="@string/flow_shared_flow_usecase_fragment_label"
-        tools:layout="@layout/fragment_flow_as_shared_flow_usecase">
+        tools:layout="@layout/fragment_flow_stock">
     </fragment>
 
     <fragment
         android:id="@+id/FlowAsStateFlowUsecaseFragment"
         android:name="com.example.coroutineflow_course.usecases.flows.usecase3.FlowAsStateFlowUsecaseFragment"
         android:label="@string/flow_state_flow_usecase_fragment_label"
-        tools:layout="@layout/fragment_flow_as_state_flow_usecase">
+        tools:layout="@layout/fragment_flow_stock">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FlowOperatorsUsecaseFragment"
+        android:name="com.example.coroutineflow_course.usecases.flows.usecase4.FlowOperatorsUsecaseFragment"
+        android:label="@string/flow_operators_fragment_label"
+        tools:layout="@layout/fragment_flow_stock">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FlowExceptionHandlingUsecaseFragment"
+        android:name="com.example.coroutineflow_course.usecases.flows.usecase5.FlowExceptionHandlingUsecaseFragment"
+        android:label="@string/flow_exception_handling_fragment_label"
+        tools:layout="@layout/fragment_flow_stock">
 
     </fragment>
 

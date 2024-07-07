@@ -38,6 +38,14 @@ class FlowUsecasesFragment : Fragment() {
             findNavController().navigate(R.id.action_FlowUsecasesFragment_to_FlowAsStateFlowUsecaseFragment)
         }
 
+        binding.tvFlowOperatorsUsecase.setOnClickListener {
+            findNavController().navigate(R.id.action_FlowUsecasesFragment_to_FlowOperatorsUsecaseFragment)
+        }
+
+        binding.tvFlowExceptionHandlingUsecase.setOnClickListener {
+            findNavController().navigate(R.id.action_FlowUsecasesFragment_to_FlowExceptionHandlingUsecaseFragment)
+        }
+
     }
 
     override fun onDestroyView() {

@@ -20,6 +20,8 @@
     <string name="flow_livedata_usecase_fragment_label">Flow LiveData Usecase</string>
     <string name="flow_shared_flow_usecase_fragment_label">Flow SharedFlow Usecase</string>
     <string name="flow_state_flow_usecase_fragment_label">Flow StateFlow Usecase</string>
+    <string name="flow_operators_fragment_label">Flow Operators Usecase</string>
+    <string name="flow_exception_handling_fragment_label">Flow Exception Handling Usecase</string>
 
     <string name="coroutine_usecase">Coroutine usecases</string>
     <string name="flow_usecase">Flow usecases</string>

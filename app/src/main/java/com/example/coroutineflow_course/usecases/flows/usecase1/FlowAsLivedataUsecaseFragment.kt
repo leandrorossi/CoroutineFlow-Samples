@@ -10,7 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.example.coroutineflow_course.databinding.FragmentFlowAsLivedataUsecaseBinding
+import com.example.coroutineflow_course.databinding.FragmentFlowStockBinding
 import com.example.coroutineflow_course.usecases.flows.utils.StockAdapter
 import com.example.coroutineflow_course.usecases.flows.utils.UiState
 import kotlinx.coroutines.launch
@@ -19,7 +19,7 @@ import org.joda.time.format.DateTimeFormat
 
 class FlowAsLivedataUsecaseFragment : Fragment() {
 
-    private var _binding: FragmentFlowAsLivedataUsecaseBinding? = null
+    private var _binding: FragmentFlowStockBinding? = null
     private val binding get() = _binding!!
 
     private val viewModel: FlowAsLivedataUsecaseViewModel by viewModels {
@@ -32,7 +32,7 @@ class FlowAsLivedataUsecaseFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentFlowAsLivedataUsecaseBinding.inflate(inflater, container, false)
+        _binding = FragmentFlowStockBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -40,7 +40,7 @@ class FlowAsLivedataUsecaseFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.rcvFlowAsLivedataUsecase.adapter = adapter
+        binding.rcvFlowStock.adapter = adapter
 
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -55,22 +55,22 @@ class FlowAsLivedataUsecaseFragment : Fragment() {
     private fun render(uiState: UiState) {
         when (uiState) {
             is UiState.Loading -> {
-                binding.pgFlowAsLivedataUsecase.visibility = View.VISIBLE
-                binding.rcvFlowAsLivedataUsecase.visibility = View.GONE
+                binding.pgFlowStock.visibility = View.VISIBLE
+                binding.rcvFlowStock.visibility = View.GONE
             }
 
             is UiState.Success -> {
-                binding.rcvFlowAsLivedataUsecase.visibility = View.VISIBLE
-                binding.tvLastUpdateTime1.text =
+                binding.rcvFlowStock.visibility = View.VISIBLE
+                binding.tvLastUpdateTime.text =
                     "lastUpdateTime: ${LocalDateTime.now().toString(DateTimeFormat.fullTime())}"
 
                 adapter.stockList = uiState.stockList
-                binding.pgFlowAsLivedataUsecase.visibility = View.GONE
+                binding.pgFlowStock.visibility = View.GONE
             }
 
             is UiState.Error -> {
                 Toast.makeText(requireContext(), uiState.message, Toast.LENGTH_SHORT).show()
-                binding.pgFlowAsLivedataUsecase.visibility = View.GONE
+                binding.pgFlowStock.visibility = View.GONE
             }
         }
     }
